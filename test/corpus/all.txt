@@ -1,23 +1,29 @@
-======
+================================================================================
 Output
-======
+================================================================================
 
 # Output:
 Output all.gif
 Output all.mp4
 Output all.webm
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (output (path)))
-  (command (output (path)))
-  (command (output (path))))
+  (command
+    (output
+      (path)))
+  (command
+    (output
+      (path)))
+  (command
+    (output
+      (path))))
 
-========
+================================================================================
 Settings
-========
+================================================================================
 
 # Settings:
 Set Shell "fish"
@@ -42,59 +48,126 @@ Set WindowBar "Colorful"
 Set WindowBarSize 40
 Set CursorBlink false
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (set (setting (string))))
-  (command (set (setting (float))))
-  (command (set (setting (string))))
-  (command (set (setting (integer))))
-  (command (set (setting (integer))))
-  (command (set (setting (float))))
-  (command (set (setting (float))))
-  (command (set (setting (json))))
-  (command (set (setting (float))))
-  (command (set (setting (float))))
-  (command (set (setting (integer))))
-  (command (set (setting (time))))
-  (command (set (setting (float))))
-  (command (set (setting (float))))
-  (command (set (setting (float))))
-  (command (set (setting (integer))))
-  (command (set (setting (string))))
-  (command (set (setting (integer))))
-  (command (set (setting (string))))
-  (command (set (setting (integer))))
-  (command (set (setting (boolean)))))
+  (command
+    (set
+      (setting
+        (string))))
+  (command
+    (set
+      (setting
+        (float))))
+  (command
+    (set
+      (setting
+        (string))))
+  (command
+    (set
+      (setting
+        (integer))))
+  (command
+    (set
+      (setting
+        (integer))))
+  (command
+    (set
+      (setting
+        (float))))
+  (command
+    (set
+      (setting
+        (float))))
+  (command
+    (set
+      (setting
+        (json))))
+  (command
+    (set
+      (setting
+        (float))))
+  (command
+    (set
+      (setting
+        (float))))
+  (command
+    (set
+      (setting
+        (integer))))
+  (command
+    (set
+      (setting
+        (time))))
+  (command
+    (set
+      (setting
+        (float))))
+  (command
+    (set
+      (setting
+        (float))))
+  (command
+    (set
+      (setting
+        (float))))
+  (command
+    (set
+      (setting
+        (integer))))
+  (command
+    (set
+      (setting
+        (string))))
+  (command
+    (set
+      (setting
+        (integer))))
+  (command
+    (set
+      (setting
+        (string))))
+  (command
+    (set
+      (setting
+        (integer))))
+  (command
+    (set
+      (setting
+        (boolean)))))
 
-
-========
+================================================================================
 Named Theme
-========
+================================================================================
 
 Set Theme "Nord"
 
----
+--------------------------------------------------------------------------------
 
 (program
-  (command (set (setting (string)))))
+  (command
+    (set
+      (setting
+        (string)))))
 
-
-========
+================================================================================
 JSON Theme
-========
+================================================================================
 
 Set Theme { "background": "white" }
 
----
+--------------------------------------------------------------------------------
 
 (program
-  (command (set (setting (json)))))
+  (command
+    (set
+      (setting
+        (json)))))
 
-=====
+================================================================================
 Env
-=====
+================================================================================
 
 # Sleep:
 Env PS1 "> "
@@ -102,18 +175,30 @@ Env FOO BAR
 Env foo bar
 Env FOO_BAR BAZ
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (env (string) (string)))
-  (command (env (string) (string)))
-  (command (env (string) (string)))
-  (command (env (string) (string))))
+  (command
+    (env
+      (string)
+      (string)))
+  (command
+    (env
+      (string)
+      (string)))
+  (command
+    (env
+      (string)
+      (string)))
+  (command
+    (env
+      (string)
+      (string))))
 
-=====
+================================================================================
 Sleep
-=====
+================================================================================
 
 # Sleep:
 Sleep 1
@@ -121,35 +206,53 @@ Sleep 500ms
 Sleep .5
 Sleep 0.5
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (sleep (time)))
-  (command (sleep (time)))
-  (command (sleep (time)))
-  (command (sleep (time))))
+  (command
+    (sleep
+      (time)))
+  (command
+    (sleep
+      (time)))
+  (command
+    (sleep
+      (time)))
+  (command
+    (sleep
+      (time))))
 
-====
+================================================================================
 Type
-====
+================================================================================
 
 # Type:
 Type "All"
 Type@.5 "All"
 Type@500ms "All"
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (type (string)))
-  (command (type (speed (time)) (string)))
-  (command (type (speed (time)) (string))))
+  (command
+    (type
+      (string)))
+  (command
+    (type
+      (speed
+        (time))
+      (string)))
+  (command
+    (type
+      (speed
+        (time))
+      (string))))
 
-====
+================================================================================
 Keys
-====
+================================================================================
 
 # Keys:
 Backspace
@@ -162,23 +265,44 @@ Right
 Up 2
 Down@1 3
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (backspace))
-  (command (down (integer)))
-  (command (enter (speed (time)) (integer)))
-  (command (space))
-  (command (tab (integer)))
-  (command (left (speed (time)) (integer)))
-  (command (right))
-  (command (up (integer)))
-  (command (down (speed (time)) (integer))))
+  (command
+    (backspace))
+  (command
+    (down
+      (integer)))
+  (command
+    (enter
+      (speed
+        (time))
+      (integer)))
+  (command
+    (space))
+  (command
+    (tab
+      (integer)))
+  (command
+    (left
+      (speed
+        (time))
+      (integer)))
+  (command
+    (right))
+  (command
+    (up
+      (integer)))
+  (command
+    (down
+      (speed
+        (time))
+      (integer))))
 
-=======
+================================================================================
 Control
-=======
+================================================================================
 
 # Control:
 Ctrl+C
@@ -188,20 +312,26 @@ Ctrl+Enter
 Ctrl+Shift+Enter
 Ctrl+Alt+Shift+P
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (control))
-  (command (control))
-  (command (control))
-  (command (control))
-  (command (control))
-  (command (control)))
+  (command
+    (control))
+  (command
+    (control))
+  (command
+    (control))
+  (command
+    (control))
+  (command
+    (control))
+  (command
+    (control)))
 
-=======
+================================================================================
 Alt
-=======
+================================================================================
 
 # Alt:
 Alt+C
@@ -211,75 +341,90 @@ Alt+Enter
 Alt+Tab
 Alt+Shift+Enter
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (alt))
-  (command (alt))
-  (command (alt))
-  (command (alt))
-  (command (alt))
-  (command (alt)))
+  (command
+    (alt))
+  (command
+    (alt))
+  (command
+    (alt))
+  (command
+    (alt))
+  (command
+    (alt))
+  (command
+    (alt)))
 
-=======
+================================================================================
 Shift
-=======
+================================================================================
 
 # Shift:
 Shift+Tab
 Shift+Enter
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (shift))
-  (command (shift)))
+  (command
+    (shift))
+  (command
+    (shift)))
 
-=======
+================================================================================
 Display
-=======
+================================================================================
 
 # Display:
 Hide
 Show
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (hide))
-  (command (show)))
+  (command)
+  (command))
 
-======
+================================================================================
 Paging
-======
+================================================================================
 
 # Paging:
 PageUp@1 3
 PageDown
 PageDown 2
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (pageup (speed (time)) (integer)))
-  (command (pagedown))
-  (command (pagedown (integer))))
+  (command
+    (pageup
+      (speed
+        (time))
+      (integer)))
+  (command
+    (pagedown))
+  (command
+    (pagedown
+      (integer))))
 
-============
+================================================================================
 Copy Paste
-============
+================================================================================
 
 # Copy
 Copy
 Paste
 
----
+--------------------------------------------------------------------------------
 
 (program
   (comment)
-  (command (copy))
-  (command (paste)))
+  (command)
+  (command))
